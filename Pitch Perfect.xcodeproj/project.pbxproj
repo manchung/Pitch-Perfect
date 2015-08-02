@@ -15,6 +15,7 @@
 		AC6331531B54E47C00B50676 /* Pitch_PerfectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6331521B54E47C00B50676 /* Pitch_PerfectTests.swift */; };
 		AC6331611B6010D400B50676 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6331601B6010D400B50676 /* PlaySoundsViewController.swift */; };
 		AC6331631B60CE6400B50676 /* movie_quote.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AC6331621B60CE6400B50676 /* movie_quote.mp3 */; };
+		AC6331651B61EC7600B50676 /* RecordedAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6331641B61EC7600B50676 /* RecordedAudio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		AC6331521B54E47C00B50676 /* Pitch_PerfectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pitch_PerfectTests.swift; sourceTree = "<group>"; };
 		AC6331601B6010D400B50676 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
 		AC6331621B60CE6400B50676 /* movie_quote.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = movie_quote.mp3; sourceTree = "<group>"; };
+		AC6331641B61EC7600B50676 /* RecordedAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordedAudio.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				AC63313C1B54E47C00B50676 /* AppDelegate.swift */,
 				AC63313E1B54E47C00B50676 /* RecordSoundsViewController.swift */,
 				AC6331401B54E47C00B50676 /* Main.storyboard */,
+				AC6331641B61EC7600B50676 /* RecordedAudio.swift */,
 				AC6331601B6010D400B50676 /* PlaySoundsViewController.swift */,
 				AC6331431B54E47C00B50676 /* Images.xcassets */,
 				AC6331451B54E47C00B50676 /* LaunchScreen.xib */,
@@ -219,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC6331651B61EC7600B50676 /* RecordedAudio.swift in Sources */,
 				AC63313F1B54E47C00B50676 /* RecordSoundsViewController.swift in Sources */,
 				AC6331611B6010D400B50676 /* PlaySoundsViewController.swift in Sources */,
 				AC63313D1B54E47C00B50676 /* AppDelegate.swift in Sources */,

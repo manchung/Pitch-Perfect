@@ -31,8 +31,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     }
 
     @IBAction func recordAudio(sender: UIButton) {
-        // toggle
-        //recordingLabel.hidden = false
         recordingLabel.text = "Recording"
         stopButton.hidden = false
         recordButton.enabled = false

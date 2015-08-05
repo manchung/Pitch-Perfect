@@ -35,8 +35,7 @@ class PlaySoundsViewController: UIViewController {
     }
     
     @IBAction func stop(sender: UIButton) {
-        audioPlayer.stop()
-        audioEngine.stop()
+        resetAudio()
     }
 
 
@@ -56,10 +55,16 @@ class PlaySoundsViewController: UIViewController {
         playWithPitch(-1000)
     }
     
-    // helper function to tune the speed of playback
-    func playWithSpeed(rate: Float) {
+    // helper function to reset audio
+    func resetAudio() {
         audioPlayer.stop()
         audioEngine.stop()
+        audioEngine.reset()
+    }
+    
+    // helper function to tune the speed of playback
+    func playWithSpeed(rate: Float) {
+        resetAudio()
         audioPlayer.rate = rate
         audioPlayer.currentTime = 0
         audioPlayer.play()
@@ -67,8 +72,7 @@ class PlaySoundsViewController: UIViewController {
     
     // helper function to tune the pitch for Chipmunk and Darth Vader effects
     func playWithPitch(pitch: Float) {
-        audioPlayer.stop()
-        audioEngine.stop()
+        resetAudio()
         audioTimePitch.pitch = pitch
         
         var mixer = audioEngine.mainMixerNode

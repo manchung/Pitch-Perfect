@@ -41,17 +41,11 @@ class PlaySoundsViewController: UIViewController {
 
 
     @IBAction func playSlow(sender: UIButton) {
-        audioPlayer.stop()
-        audioPlayer.rate = 0.5
-        audioPlayer.currentTime = 0
-        audioPlayer.play()
+        playWithSpeed(0.5)
     }
     
     @IBAction func playFast(sender: UIButton) {
-        audioPlayer.stop()
-        audioPlayer.rate = 1.5
-        audioPlayer.currentTime = 0
-        audioPlayer.play()
+        playWithSpeed(1.5)
     }
     
     @IBAction func playChipmunk(sender: UIButton) {
@@ -60,6 +54,15 @@ class PlaySoundsViewController: UIViewController {
 
     @IBAction func playDarth(sender: UIButton) {
         playWithPitch(-1000)
+    }
+    
+    // helper function to tune the speed of playback
+    func playWithSpeed(rate: Float) {
+        audioPlayer.stop()
+        audioEngine.stop()
+        audioPlayer.rate = rate
+        audioPlayer.currentTime = 0
+        audioPlayer.play()
     }
     
     // helper function to tune the pitch for Chipmunk and Darth Vader effects
